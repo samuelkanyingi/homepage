@@ -1,0 +1,289 @@
+/*Playfair Display*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color: black;
+    font-family: Playfair Display;
+    /*font-family: Roboto;*/
+}
+.myname {
+    position: absolute;
+    margin-right: 470px;
+    z-index: 1;
+    margin-bottom: -320px;
+    font-family: Playfair Display;
+    color: white;
+}
+.reader {
+    font: 900;
+    position: relative;
+    z-index: 0;
+}
+.pdesc  {
+    padding-top: 20px;
+    font-family: Roboto;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.clip {
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+    background-color: #7fffd4;
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+}
+
+.wrapper {
+    display: flex;
+    column-gap: 0px;
+    margin-top: -359px;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    height: auto;
+    width: 400px;
+    box-shadow: 0 3px 10px black;
+    padding: 20px;
+}
+p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1001px) {
+    body {
+        background-color: red;
+    }
+}
+.main-container{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    justify-content: center;
+    box-shadow: 0 3px 10px black; 
+}
+.inner-item {
+    height: 100px;
+    background-color: maroon;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+.inner-itemi {
+    background-color: rgb(111, 110, 197);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+.inner-itemii {
+    background-color: rgb(15, 122, 29);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+.inner-itemiii {
+    background-color: rgb(189, 86, 166);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+.inner-itemiv {
+    background-color: rgba(202, 133, 30, 0.973);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+.inner-itemv {
+    background-color: rgb(87, 195, 223);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 32px;
+    font-family: Playfair Display;
+}
+
+.inner-item2{
+    display: flex;
+    
+}
+.inner-item-contain {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    height: 150px;
+}
+
+.footer-wrapper {
+    margin-top: 40px;
+   background-color: #0099ff;
+   display: grid;
+   grid-template-rows: 350px;
+   grid-template-columns: 1fr 1fr;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   justify-items: center;
+   column-gap:10px;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.phone, .email, .socials {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+ body {
+    background-color: orange;
+ }
+ .main-container{
+    display: grid;
+    /*flex-wrap: wrap;*/
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 200px;
+    justify-content: center;
+    }
+
+    .footer-wrapper {
+       
+       background-color: #0099ff;
+       display: grid;
+       grid-template-rows: 350px;
+       grid-template-columns: 1fr 1fr ;
+       /*padding-top: 50px;
+       padding-bottom: 20px;*/
+       justify-items: center;
+       column-gap:10px;
+    }
+    .reader {
+        width: 350px;
+    }
+    .myname {
+        position: absolute;
+        margin-right: 340px;  
+        z-index: 1;
+        margin-bottom: 480px;
+        font-family: Playfair Display;
+        color: #ffffff;
+        font-size: 2em;
+        
+    }
+    .wrapper {
+        display: flex;
+        flex-direction:row;
+        column-gap: 0px;
+        margin-top: -359px;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: purple;
+    }
+    .main-container{
+        display: grid;
+        /*flex-wrap: wrap;*/
+        grid-template-rows: 300px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-content: center;
+    }
+    .footer-wrapper {
+        background-color: #0099ff;
+        display: block;
+        height: 300px;
+        column-gap:10px;
+     }
+     .footer-image {
+        width: 450px;
+     }
+     .first {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        justify-content: center;
+    }
+    .myname {
+        position: absolute;
+        margin-right: 10px;
+        z-index: 1;
+        margin-bottom: -20px;
+        font-family: Playfair Display;
+        color: white;
+        font-size: 2em;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        column-gap: 0px;
+        margin-top: -359px;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        z-index: 1;
+    }
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        height: auto;
+        width: 200px;
+        row-gap: 10px;
+        box-shadow: 0 3px 10px black;
+        padding: 20px;
+    }
+    
+}
